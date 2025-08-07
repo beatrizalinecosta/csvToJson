@@ -3,11 +3,11 @@ export function jsonToCsv(jsonText) {
   try {
     json = JSON.parse(jsonText);
   } catch {
-    throw new Error("JSON inválido.");
+    throw new Error("Invalid JSON.");
   }
 
   if (!Array.isArray(json) || json.length === 0) {
-    throw new Error("JSON deve ser um array de objetos.");
+    throw new Error("JSON must be an object array.");
   }
 
   const headers = Object.keys(json[0]);
