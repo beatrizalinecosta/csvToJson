@@ -11,7 +11,7 @@ function App() {
       <Header />
       <div className="container py-4">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/csvToJson" element={<Home />} />
           <Route path="/csv-to-json" element={<CsvToJsonPage />} />
           <Route path="/json-to-csv" element={<JsonToCsvPage />} />
         </Routes>
